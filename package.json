@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "dev": " concurrently 'tsc --watch main.ts' 'sass -w main.scss main.css' "},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Projetos-edu-jv/bin2DecApp.git"
@@ -16,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Projetos-edu-jv/bin2DecApp/issues"
   },
-  "homepage": "https://github.com/Projetos-edu-jv/bin2DecApp#readme"
+  "homepage": "https://github.com/Projetos-edu-jv/bin2DecApp#readme",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <title>Bin2Dec</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Conversor binário!</h1>
+
+            <label for="decimal">Insira o Valor Binario:</label>
+            <input id="decimal" placeholder="minimo 8 numeros..." type="string" class="decimal">
+            <p class="err off">Coloque essa por# diretio!</p>
+
+            <h2 class="display off"></h2>
+
+            <div id="cont-btns">
+                <button onclick="copiar()" class="copiar">Copiar Decimal</button>
+                <button onclick="colar()" class="colar">Colar Binario</button>
+            </div>
+            <button class="btn-converter" onclick="teste()">Converter</button>
+        </div>
+    </body>
+
+    <script src="./main.js"></script>
+
+</html>
